@@ -8,12 +8,59 @@
   <name>test158 Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
+  
+    <!-- 使用testng替换junit -->
+<dependency>
+   <groupId>org.testng</groupId>
+   <artifactId>testng</artifactId>
+   <version>6.8.8</version>
+   <scope>compile</scope>
+</dependency>
+
+<!-- 配置httpclient -->
+<dependency>
+    <groupId>org.apache.httpcomponents</groupId>
+    <artifactId>httpclient</artifactId>
+    <version>4.5.2</version>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.httpcomponents</groupId>
+    <artifactId>httpmime</artifactId>
+    <version>4.5.2</version>
+</dependency>
+
+<!-- 配置feed4testng框架 -->
+<dependency>
+    <groupId>org.databene</groupId>
+    <artifactId>feed4testng</artifactId>
+    <version>0.6.2</version>
+</dependency>
+    
+<dependency>
+	<groupId>org.slf4j</groupId>
+	<artifactId>slf4j-log4j12</artifactId>
+	<version>1.7.2</version>
+</dependency>
+
+<dependency>
+    <groupId>org.uncommons</groupId>
+    <artifactId>reportng</artifactId>
+    <version>1.1.4</version>
+</dependency>
+
+<dependency>
+    <groupId>velocity</groupId>
+    <artifactId>velocity</artifactId>
+    <version>1.5</version>
+</dependency>
+
+<dependency>
+    <groupId>com.google.inject</groupId>
+    <artifactId>guice</artifactId>
+    <version>3.0</version>
+</dependency>
+
   </dependencies>
   <build>
     <finalName>test158</finalName>
